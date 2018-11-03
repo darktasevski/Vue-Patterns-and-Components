@@ -1,10 +1,10 @@
-# test-project
+# Modal Scroll lock
 
-> A Vue.js project
+> A Vue.js example of locking background when modal is displayed
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
