@@ -1,6 +1,8 @@
-# Vue Slots
+# Vue Slot buttons
 
-> Example of injecting content to components by using named and unnamed slots
+Vue button components with slots and class merge example
+
+Note: When using slots to design components like buttons this way, it's interesting to know that Vue will actually combine/merge any class attributes on the component tags with any class attr inside the component's top element. This is really useful when customizing components.
 
 ## Build Setup
 
