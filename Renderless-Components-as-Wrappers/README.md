@@ -1,10 +1,10 @@
-# Data Provider Components
+# test-project
 
-> A pattern that is making use of render functions and scoped slots to fetch and provide components from children to parent.
+> A Vue.js project
 
 ## Build Setup
 
-```bash
+``` bash
 # install dependencies
 npm install
 

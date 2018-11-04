@@ -1,6 +1,6 @@
-# Data Provider Components
+# Renderless UI Components
 
-> A pattern that is making use of render functions and scoped slots to fetch and provide components from children to parent.
+> A thing to note is that we can't pass a v-model binding directly to renderless component
 
 ## Build Setup
 

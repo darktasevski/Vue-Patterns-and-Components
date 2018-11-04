@@ -1,6 +1,6 @@
-# Data Provider Components
+# Implementing Alternate Layouts with Renderless Components
 
-> A pattern that is making use of render functions and scoped slots to fetch and provide components from children to parent.
+> A Vue.js project
 
 ## Build Setup
 

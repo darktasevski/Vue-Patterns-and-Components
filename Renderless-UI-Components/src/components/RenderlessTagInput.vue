@@ -1,0 +1,62 @@
+<script>
+export default {
+	model: {
+		prop: 'tags',
+		event: 'update',
+	},
+	props: ['tags'],
+	data() {
+		return {
+			input: '',
+		};
+	},
+	computed: {
+		newTag() {
+			return this.input.trim();
+		},
+	},
+	render() {
+		return this.$scopedSlots.default({
+			tags: this.tags,
+			removeTag: this.removeTag,
+			removeButtonEvents: tag => ({
+				click: this.removeTag(tag),
+			}),
+			inputProps: {
+				value: this.input,
+			},
+			inputEvents: {
+				input: e => (this.input = e.target.value),
+				keydown: e => {
+					if (e.key === 'Backspace') {
+						this.handleBackspace();
+					} else if (e.key === 'Enter') {
+						e.preventDefault();
+						this.addTag();
+					}
+				},
+			},
+		});
+	},
+	methods: {
+		removeTag(tag) {
+			this.$emit('update', this.tags.filter(t => t !== tag));
+		},
+		addTag() {
+			if (this.newTag.length === 0 || this.tags.includes(this.newTag)) {
+				return;
+			}
+			this.$emit('update', [...this.tags, this.newTag]);
+			this.clearInput();
+		},
+		clearInput() {
+			this.input = '';
+		},
+		handleBackspace(e) {
+			if (this.newTag.length === 0) {
+				this.$emit('update', this.tags.slice(0, -1));
+			}
+		},
+	},
+};
+</script>
