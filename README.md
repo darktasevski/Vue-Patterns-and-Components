@@ -8,3 +8,4 @@ Libs used:
 -   [Pikaday](https://github.com/Pikaday/Pikaday) - A refreshing JavaScript Datepicker
 -   [element-resize-detector](https://github.com/wnr/element-resize-detector) - Optimized cross-browser resize listener for elements.
 -   [Draggable](https://github.com/Shopify/draggable#readme) - JavaScript Drag & Drop library
+-   [Popper.js](https://popper.js.org/) - dead simple tooltip library
