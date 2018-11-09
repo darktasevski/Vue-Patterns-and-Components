@@ -1,6 +1,6 @@
 # Vue Components and pattern examples
 
-Collection of Vue components and examples of using different patterns while working with them
+Collection of Vue components and examples of using different patterns while working with them.
 
 Libs used:
 
